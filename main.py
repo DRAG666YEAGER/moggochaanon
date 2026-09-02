@@ -58,11 +58,11 @@ async def cmd_start(message: Message, command: CommandObject, state: FSMContext)
     # Если это обычный /start от админа или юзера
     if message.from_user.id in ADMIN_IDS:
         await message.answer(
-            "👋 Привет, админ! Нажми кнопку ниже, чтобы получить свою реферальную ссылку.",
+            "👋 Привет!",
             reply_markup=get_admin_kb()
         )
     else:
-        await message.answer("👋 Привет! Напишите нам через реферальные ссылки админов.")
+        await message.answer("👋")
 
 # --- ГЕНЕРАЦИЯ ССЫЛКИ ДЛЯ АДМИНА ---
 @router.callback_query(F.data == "gen_ref_link")
