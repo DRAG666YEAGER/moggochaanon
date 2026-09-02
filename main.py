@@ -6,7 +6,7 @@ from aiogram.fsm.context import FSMContext
 from aiogram.fsm.state import State, StatesGroup
 from aiogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
-BOT_TOKEN = "8364731756:AAHl77m4YHAFb_6_9w5cbzzB0ZCa3jrDLW8"
+BOT_TOKEN = ""
 
 # 🔑 СПИСОК ID АДМИНИСТРАТОРОВ (Замени 123456789 на свой реальный Telegram ID)
 ADMIN_IDS = [
